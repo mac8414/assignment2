@@ -33,8 +33,16 @@ public class CircularQueue<Item> implements Iterable<Item> {
    public int size(){
       return SIZE;
    }
-   public void enqueue(Item item)
-   public Item dequeue()
-   public Item peek()
-   public String toString()
+   public void enqueue(Item item){
+      
+   }
+   public Item dequeue(){
+
+   }
+   public Item peek(){
+
+   }
+   public String toString(){
+
+   }
 }
