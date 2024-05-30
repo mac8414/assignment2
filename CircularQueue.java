@@ -34,6 +34,7 @@ public class CircularQueue<Item> implements Iterable<Item> {
       return SIZE;
    }
    public void enqueue(Item item){
+      int element;
       if (isFull()) {
       System.out.println("Queue is full");
     } else {
