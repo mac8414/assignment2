@@ -63,9 +63,20 @@ public class CircularQueue<Item> implements Iterable<Item> {
     }
    }
    public Item peek(){
-
+      if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        return front.item;
    }
    public String toString(){
-
+     int i;
+    if (isEmpty()) {
+      System.out.println("Empty Queue");
+    } else {
+      System.out.println("Front -> " + front);
+      System.out.println("Items -> ");
+      for (i = front; i != rear; i = (i + 1) % SIZE)
+        System.out.print(items[i] + " ");
+      System.out.println(items[i]);
+      System.out.println("Rear -> " + rear);
+    }
    }
 }
